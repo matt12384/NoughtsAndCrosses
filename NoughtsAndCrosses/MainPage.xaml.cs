@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -49,108 +50,122 @@ namespace NoughtsAndCrosses
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
+            button1.IsEnabled = false;
             GoChecker();
             board[0, 0] = currentPlayer;
             button1.Content = currentPlayer;
             goCounter++;
             CheckWinner();
-            button1.IsEnabled = false;
             WinningMove();
         }
 
         private void button2_Click(object sender, RoutedEventArgs e)
         {
+            button2.IsEnabled = false;
             GoChecker();
             board[0, 1] = currentPlayer;
             button2.Content = currentPlayer;
             goCounter++;
             CheckWinner();
-            button2.IsEnabled = false;
             WinningMove();
         }
 
         private void button3_Click(object sender, RoutedEventArgs e)
         {
+            button3.IsEnabled = false;
             GoChecker();
             board[0, 2] = currentPlayer;
             button3.Content = currentPlayer;
             goCounter++;
             CheckWinner();
-            button3.IsEnabled = false;
             WinningMove();
         }
 
         private void button4_Click(object sender, RoutedEventArgs e)
         {
+            button4.IsEnabled = false;
             GoChecker();
             board[1, 0] = currentPlayer;
             button4.Content = currentPlayer;
             goCounter++;
             CheckWinner();
-            button4.IsEnabled = false;
             WinningMove();
         }
 
         private void button5_Click(object sender, RoutedEventArgs e)
         {
+            button5.IsEnabled = false;
             GoChecker();
             board[1, 1] = currentPlayer;
             button5.Content = currentPlayer;
             goCounter++;
             CheckWinner();
-            button5.IsEnabled = false;
             WinningMove();
         }
 
         private void button6_Click(object sender, RoutedEventArgs e)
         {
+            button6.IsEnabled = false;
             GoChecker();
             board[1, 2] = currentPlayer;
             button6.Content = currentPlayer;
             goCounter++;
             CheckWinner();
-            button6.IsEnabled = false;
             WinningMove();
         }
 
         private void button7_Click(object sender, RoutedEventArgs e)
         {
+            button7.IsEnabled = false;
             GoChecker();
             board[2, 0] = currentPlayer;
             button7.Content = currentPlayer;
             goCounter++;
             CheckWinner();
-            button7.IsEnabled = false;
             WinningMove();
         }
 
         private void button8_Click(object sender, RoutedEventArgs e)
         {
+            button8.IsEnabled = false;
             GoChecker();
             board[2, 1] = currentPlayer;
             button8.Content = currentPlayer;
             goCounter++;
             CheckWinner();
-            button8.IsEnabled = false;
             WinningMove();
         }
 
         private void button9_Click(object sender, RoutedEventArgs e)
         {
+
+            button9.IsEnabled = false;
             GoChecker();
             board[2, 2] = currentPlayer;
             button9.Content = currentPlayer;
             goCounter++;
             CheckWinner();
-            button9.IsEnabled = false;
             WinningMove();
         }
+
+        //public void AddColourToWinningSquares()
+        //{
+        //    if (board[0, 0] == board[0, 1] && board[0, 1] == board[0, 2] && board[0, 0] != null && board[0, 1] != null && board[0, 2] != null)
+        //    {
+        //        button1.Background = new SolidColorBrush(Color.FromArgb(255, 48, 179, 221));
+        //        button2.Background = new SolidColorBrush(Color.FromArgb(255, 48, 179, 221));
+        //        button3.Background = new SolidColorBrush(Color.FromArgb(255, 48, 179, 221));
+        //    }
+        //}
 
         public bool CheckWinner()
         {
             //Rows
             if (board[0, 0] == board[0, 1] && board[0, 1] == board[0, 2] && board[0, 0] != null && board[0, 1] != null && board[0, 2] != null)
             {
+                button1.Background = new SolidColorBrush(Color.FromArgb(255, 48, 179, 221));
+                button2.Background = new SolidColorBrush(Color.FromArgb(255, 48, 179, 221));
+                button3.Background = new SolidColorBrush(Color.FromArgb(255, 48, 179, 221));
                 displayWinner.Text = board[0, 0] + " wins!";
                 return true;
             }
@@ -158,6 +173,9 @@ namespace NoughtsAndCrosses
 
             if (board[1, 0] == board[1, 1] && board[1, 1] == board[1, 2] && board[1, 0] != null && board[1, 1] != null && board[1, 2] != null)
             {
+                button4.Background = new SolidColorBrush(Color.FromArgb(255, 48, 179, 221));
+                button5.Background = new SolidColorBrush(Color.FromArgb(255, 48, 179, 221));
+                button6.Background = new SolidColorBrush(Color.FromArgb(255, 48, 179, 221));
                 displayWinner.Text = board[1, 0] + " wins!";
                 return true;
             }
@@ -165,6 +183,9 @@ namespace NoughtsAndCrosses
 
             if (board[2, 0] == board[2, 1] && board[2, 1] == board[2, 2] && board[2, 0] != null && board[2, 1] != null && board[2, 2] != null)
             {
+                button7.Background = new SolidColorBrush(Color.FromArgb(255, 48, 179, 221));
+                button8.Background = new SolidColorBrush(Color.FromArgb(255, 48, 179, 221));
+                button9.Background = new SolidColorBrush(Color.FromArgb(255, 48, 179, 221));
                 displayWinner.Text = board[2, 0] + " wins!";
                 return true;
             }
@@ -173,6 +194,9 @@ namespace NoughtsAndCrosses
             //Columns
             if (board[0, 0] == board[1, 0] && board[1, 0] == board[2, 0] && board[0, 0] != null && board[1, 0] != null && board[2, 0] != null)
             {
+                button1.Background = new SolidColorBrush(Color.FromArgb(255, 48, 179, 221));
+                button4.Background = new SolidColorBrush(Color.FromArgb(255, 48, 179, 221));
+                button7.Background = new SolidColorBrush(Color.FromArgb(255, 48, 179, 221));
                 displayWinner.Text = board[0, 0] + " wins!";
                 return true;
             }
@@ -180,6 +204,9 @@ namespace NoughtsAndCrosses
 
             if (board[0, 1] == board[1, 1] && board[1, 1] == board[2, 1] && board[0, 1] != null && board[1, 1] != null && board[2, 1] != null)
             {
+                button2.Background = new SolidColorBrush(Color.FromArgb(255, 48, 179, 221));
+                button5.Background = new SolidColorBrush(Color.FromArgb(255, 48, 179, 221));
+                button8.Background = new SolidColorBrush(Color.FromArgb(255, 48, 179, 221));
                 displayWinner.Text = board[0, 1] + " wins!";
                 return true;
             }
@@ -187,6 +214,9 @@ namespace NoughtsAndCrosses
 
             if (board[0, 2] == board[1, 2] && board[1, 2] == board[2, 2] && board[0, 2] != null && board[1, 2] != null && board[2, 2] != null)
             {
+                button3.Background = new SolidColorBrush(Color.FromArgb(255, 48, 179, 221));
+                button6.Background = new SolidColorBrush(Color.FromArgb(255, 48, 179, 221));
+                button9.Background = new SolidColorBrush(Color.FromArgb(255, 48, 179, 221));
                 displayWinner.Text = board[0, 2] + " wins!";
                 return true;
             }
@@ -195,6 +225,9 @@ namespace NoughtsAndCrosses
             //Diagonals
             if (board[0, 0] == board[1, 1] && board[1, 1] == board[2, 2] && board[0, 0] != null && board[1, 1] != null && board[2, 2] != null)
             {
+                button1.Background = new SolidColorBrush(Color.FromArgb(255, 48, 179, 221));
+                button5.Background = new SolidColorBrush(Color.FromArgb(255, 48, 179, 221));
+                button9.Background = new SolidColorBrush(Color.FromArgb(255, 48, 179, 221));
                 displayWinner.Text = board[0, 0] + " wins!";
                 return true;
             }
@@ -202,12 +235,21 @@ namespace NoughtsAndCrosses
 
             if (board[0, 2] == board[1, 1] && board[1, 1] == board[2, 0] && board[0, 2] != null && board[1, 1] != null && board[2, 0] != null)
             {
+                button3.Background = new SolidColorBrush(Color.FromArgb(255, 48, 179, 221));
+                button5.Background = new SolidColorBrush(Color.FromArgb(255, 48, 179, 221));
+                button7.Background = new SolidColorBrush(Color.FromArgb(255, 48, 179, 221));
                 displayWinner.Text = board[0, 2] + " wins!";
                 return true;
             }
 
+            //Draw
+            if (goCounter >= 10)
+            {
+                displayWinner.Text = "Draw";
+                return false;
+            }
+
             return false;
-                
         }
 
         public void WinningMove()
@@ -223,6 +265,8 @@ namespace NoughtsAndCrosses
                 button7.IsEnabled = false;
                 button8.IsEnabled = false;
                 button9.IsEnabled = false;
+
+                playerTurn.Text = "";
             }
         }
 
@@ -251,6 +295,16 @@ namespace NoughtsAndCrosses
             button7.IsEnabled = true;
             button8.IsEnabled = true;
             button9.IsEnabled = true;
+
+            button1.Background = new SolidColorBrush(Color.FromArgb(0, 0, 0, 0));
+            button2.Background = new SolidColorBrush(Color.FromArgb(0, 0, 0, 0));
+            button3.Background = new SolidColorBrush(Color.FromArgb(0, 0, 0, 0));
+            button4.Background = new SolidColorBrush(Color.FromArgb(0, 0, 0, 0));
+            button5.Background = new SolidColorBrush(Color.FromArgb(0, 0, 0, 0));
+            button6.Background = new SolidColorBrush(Color.FromArgb(0, 0, 0, 0));
+            button7.Background = new SolidColorBrush(Color.FromArgb(0, 0, 0, 0));
+            button8.Background = new SolidColorBrush(Color.FromArgb(0, 0, 0, 0));
+            button9.Background = new SolidColorBrush(Color.FromArgb(0, 0, 0, 0));
 
             currentPlayer = "O";
             goCounter = 1;

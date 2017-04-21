@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>D:\CSharpWorkspace\NoughtsAndCrosses\NoughtsAndCrosses\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>9616D271EE651CF3DE21B497DF4A9F3D648B1E9E5AC61B0838C02D8000D3CD08</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>6FB032C4D7C68B80A645A18FEBD951F6FF2A7047CB1247BF6A537856273DBDD0</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>f22ef44d-d3bd-4ff1-83c8-4423ba00f63c_1.0.0.0_x86__ytsavkaeyz94y</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>f22ef44d-d3bd-4ff1-83c8-4423ba00f63c_ytsavkaeyz94y!App</RegisteredUserModeAppID>
     <RegisteredPackageID>f22ef44d-d3bd-4ff1-83c8-4423ba00f63c</RegisteredPackageID>
@@ -31,13 +31,13 @@
     <AppXManifest Include="D:\CSharpWorkspace\NoughtsAndCrosses\NoughtsAndCrosses\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-21T12:33:51.488</Modified>
+      <Modified>2017-04-21T15:20:33.043</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\CSharpWorkspace\NoughtsAndCrosses\NoughtsAndCrosses\bin\x86\Debug\NoughtsAndCrosses.exe">
       <PackagePath>entrypoint\NoughtsAndCrosses.exe</PackagePath>
-      <Modified>2017-04-21T12:33:51.271</Modified>
+      <Modified>2017-04-21T15:20:32.817</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\matt1\.nuget\packages\Microsoft.CSharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -544,11 +544,11 @@
     <AppxPackagedFile Include="D:\CSharpWorkspace\NoughtsAndCrosses\NoughtsAndCrosses\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-21T12:21:02.632</Modified>
+      <Modified>2017-04-21T15:17:09.149</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\CSharpWorkspace\NoughtsAndCrosses\NoughtsAndCrosses\bin\x86\Debug\Core\NoughtsAndCrosses.exe">
       <PackagePath>NoughtsAndCrosses.exe</PackagePath>
-      <Modified>2017-04-21T12:33:51.486</Modified>
+      <Modified>2017-04-21T15:20:33.041</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

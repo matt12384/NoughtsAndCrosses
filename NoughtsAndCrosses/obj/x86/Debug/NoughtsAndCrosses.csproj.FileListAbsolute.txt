@@ -122,7 +122,6 @@ D:\CSharpWorkspace\NoughtsAndCrosses\NoughtsAndCrosses\bin\x86\Debug\System.Xml.
 D:\CSharpWorkspace\NoughtsAndCrosses\NoughtsAndCrosses\bin\x86\Debug\System.Xml.XDocument.dll
 D:\CSharpWorkspace\NoughtsAndCrosses\NoughtsAndCrosses\bin\x86\Debug\System.Xml.XmlDocument.dll
 D:\CSharpWorkspace\NoughtsAndCrosses\NoughtsAndCrosses\bin\x86\Debug\System.Xml.XmlSerializer.dll
-D:\CSharpWorkspace\NoughtsAndCrosses\NoughtsAndCrosses\obj\x86\Debug\NoughtsAndCrosses.csprojResolveAssemblyReference.cache
 D:\CSharpWorkspace\NoughtsAndCrosses\NoughtsAndCrosses\obj\x86\Debug\App.g.i.cs
 D:\CSharpWorkspace\NoughtsAndCrosses\NoughtsAndCrosses\obj\x86\Debug\App.g.cs
 D:\CSharpWorkspace\NoughtsAndCrosses\NoughtsAndCrosses\obj\x86\Debug\MainPage.g.i.cs
