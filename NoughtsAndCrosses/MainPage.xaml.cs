@@ -148,24 +148,11 @@ namespace NoughtsAndCrosses
             WinningMove();
         }
 
-        //public void AddColourToWinningSquares()
-        //{
-        //    if (board[0, 0] == board[0, 1] && board[0, 1] == board[0, 2] && board[0, 0] != null && board[0, 1] != null && board[0, 2] != null)
-        //    {
-        //        button1.Background = new SolidColorBrush(Color.FromArgb(255, 48, 179, 221));
-        //        button2.Background = new SolidColorBrush(Color.FromArgb(255, 48, 179, 221));
-        //        button3.Background = new SolidColorBrush(Color.FromArgb(255, 48, 179, 221));
-        //    }
-        //}
-
         public bool CheckWinner()
         {
             //Rows
             if (board[0, 0] == board[0, 1] && board[0, 1] == board[0, 2] && board[0, 0] != null && board[0, 1] != null && board[0, 2] != null)
             {
-                button1.Background = new SolidColorBrush(Color.FromArgb(255, 48, 179, 221));
-                button2.Background = new SolidColorBrush(Color.FromArgb(255, 48, 179, 221));
-                button3.Background = new SolidColorBrush(Color.FromArgb(255, 48, 179, 221));
                 displayWinner.Text = board[0, 0] + " wins!";
                 return true;
             }
@@ -173,9 +160,6 @@ namespace NoughtsAndCrosses
 
             if (board[1, 0] == board[1, 1] && board[1, 1] == board[1, 2] && board[1, 0] != null && board[1, 1] != null && board[1, 2] != null)
             {
-                button4.Background = new SolidColorBrush(Color.FromArgb(255, 48, 179, 221));
-                button5.Background = new SolidColorBrush(Color.FromArgb(255, 48, 179, 221));
-                button6.Background = new SolidColorBrush(Color.FromArgb(255, 48, 179, 221));
                 displayWinner.Text = board[1, 0] + " wins!";
                 return true;
             }
@@ -183,9 +167,6 @@ namespace NoughtsAndCrosses
 
             if (board[2, 0] == board[2, 1] && board[2, 1] == board[2, 2] && board[2, 0] != null && board[2, 1] != null && board[2, 2] != null)
             {
-                button7.Background = new SolidColorBrush(Color.FromArgb(255, 48, 179, 221));
-                button8.Background = new SolidColorBrush(Color.FromArgb(255, 48, 179, 221));
-                button9.Background = new SolidColorBrush(Color.FromArgb(255, 48, 179, 221));
                 displayWinner.Text = board[2, 0] + " wins!";
                 return true;
             }
@@ -194,9 +175,6 @@ namespace NoughtsAndCrosses
             //Columns
             if (board[0, 0] == board[1, 0] && board[1, 0] == board[2, 0] && board[0, 0] != null && board[1, 0] != null && board[2, 0] != null)
             {
-                button1.Background = new SolidColorBrush(Color.FromArgb(255, 48, 179, 221));
-                button4.Background = new SolidColorBrush(Color.FromArgb(255, 48, 179, 221));
-                button7.Background = new SolidColorBrush(Color.FromArgb(255, 48, 179, 221));
                 displayWinner.Text = board[0, 0] + " wins!";
                 return true;
             }
@@ -204,9 +182,6 @@ namespace NoughtsAndCrosses
 
             if (board[0, 1] == board[1, 1] && board[1, 1] == board[2, 1] && board[0, 1] != null && board[1, 1] != null && board[2, 1] != null)
             {
-                button2.Background = new SolidColorBrush(Color.FromArgb(255, 48, 179, 221));
-                button5.Background = new SolidColorBrush(Color.FromArgb(255, 48, 179, 221));
-                button8.Background = new SolidColorBrush(Color.FromArgb(255, 48, 179, 221));
                 displayWinner.Text = board[0, 1] + " wins!";
                 return true;
             }
@@ -214,9 +189,6 @@ namespace NoughtsAndCrosses
 
             if (board[0, 2] == board[1, 2] && board[1, 2] == board[2, 2] && board[0, 2] != null && board[1, 2] != null && board[2, 2] != null)
             {
-                button3.Background = new SolidColorBrush(Color.FromArgb(255, 48, 179, 221));
-                button6.Background = new SolidColorBrush(Color.FromArgb(255, 48, 179, 221));
-                button9.Background = new SolidColorBrush(Color.FromArgb(255, 48, 179, 221));
                 displayWinner.Text = board[0, 2] + " wins!";
                 return true;
             }
@@ -225,9 +197,6 @@ namespace NoughtsAndCrosses
             //Diagonals
             if (board[0, 0] == board[1, 1] && board[1, 1] == board[2, 2] && board[0, 0] != null && board[1, 1] != null && board[2, 2] != null)
             {
-                button1.Background = new SolidColorBrush(Color.FromArgb(255, 48, 179, 221));
-                button5.Background = new SolidColorBrush(Color.FromArgb(255, 48, 179, 221));
-                button9.Background = new SolidColorBrush(Color.FromArgb(255, 48, 179, 221));
                 displayWinner.Text = board[0, 0] + " wins!";
                 return true;
             }

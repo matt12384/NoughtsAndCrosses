@@ -209,3 +209,4 @@ D:\CSharpWorkspace\NoughtsAndCrosses\NoughtsAndCrosses\obj\x86\Debug\qualifiers.
 D:\CSharpWorkspace\NoughtsAndCrosses\NoughtsAndCrosses\obj\x86\Debug\qualifiers.txt.intermediate
 D:\CSharpWorkspace\NoughtsAndCrosses\NoughtsAndCrosses\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 D:\CSharpWorkspace\NoughtsAndCrosses\NoughtsAndCrosses\obj\x86\Debug\ProjectArchitectures.txt
+D:\CSharpWorkspace\NoughtsAndCrosses\NoughtsAndCrosses\obj\x86\Debug\NoughtsAndCrosses.csprojResolveAssemblyReference.cache
